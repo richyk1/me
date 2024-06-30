@@ -1,6 +1,0 @@
-[phases.setup]
-nixPkgs = ["...", "hugo"]
-
-[phases.build]
-cmds = ["...", "hugo", "echo Hugo has done Hugoing!"]
-

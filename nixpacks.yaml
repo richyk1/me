@@ -1,0 +1,10 @@
+phases:
+  setup:
+    nixPkgs:
+      - ...
+      - hugo
+  build:
+    cmds:
+      - ...
+      - hugo
+      - echo Hugo has done Hugoing!
