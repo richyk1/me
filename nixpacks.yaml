@@ -1,6 +1,6 @@
 phases:
   setup:
-    aptPkgs:
+    nixpkgs:
       - hugo
   build:
     cmds:
