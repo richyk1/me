@@ -1,10 +1,10 @@
 phases:
   setup:
     nixPkgs:
-      - ...
       - hugo
   build:
     cmds:
-      - ...
-      - hugo
-      - echo Hugo has done Hugoing!
+      - hugo --minify
+      - echo The build is complete.
+included_files:
+  - /public
