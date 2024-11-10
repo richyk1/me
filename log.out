@@ -1,0 +1,518 @@
+.
+├── Staticfile
+├── archetypes
+│   ├── default.md
+│   └── post.md
+├── assets
+├── content
+│   └── posts
+│       └── my-first-ever-post.md
+├── data
+├── hugo.yaml
+├── i18n
+├── layouts
+├── log.out
+├── nixpacks.yaml
+├── public
+│   ├── 404.html
+│   ├── assets
+│   │   └── css
+│   │       └── stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css
+│   ├── categories
+│   │   ├── index.html
+│   │   └── index.xml
+│   ├── hello
+│   │   └── index.html
+│   ├── icons
+│   │   ├── android-chrome-192x192.png
+│   │   ├── android-chrome-512x512.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── browserconfig.xml
+│   │   ├── favicon-114x114.png
+│   │   ├── favicon-120x120.png
+│   │   ├── favicon-128x128.png
+│   │   ├── favicon-144x144.png
+│   │   ├── favicon-150x150.png
+│   │   ├── favicon-152x152.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-180x180.png
+│   │   ├── favicon-192x192.png
+│   │   ├── favicon-310x310.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon-384x384.png
+│   │   ├── favicon-512x512.png
+│   │   ├── favicon-57x57.png
+│   │   ├── favicon-60x60.png
+│   │   ├── favicon-70x70.png
+│   │   ├── favicon-72x72.png
+│   │   ├── favicon-76x76.png
+│   │   ├── favicon-96x96.png
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   ├── index.html
+│   ├── index.xml
+│   ├── page
+│   │   └── 1
+│   │       └── index.html
+│   ├── posts
+│   │   ├── hello
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   ├── my-first-ever-post
+│   │   │   └── index.html
+│   │   ├── page
+│   │   │   └── 1
+│   │   │       └── index.html
+│   │   └── rich-content
+│   │       └── index.html
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── tags
+│       ├── first
+│       │   ├── index.html
+│       │   ├── index.xml
+│       │   └── page
+│       │       └── 1
+│       │           └── index.html
+│       ├── index.html
+│       ├── index.xml
+│       ├── markdown
+│       │   ├── index.html
+│       │   ├── index.xml
+│       │   └── page
+│       │       └── 1
+│       │           └── index.html
+│       ├── privacy
+│       │   ├── index.html
+│       │   ├── index.xml
+│       │   └── page
+│       │       └── 1
+│       │           └── index.html
+│       └── shortcodes
+│           ├── index.html
+│           ├── index.xml
+│           └── page
+│               └── 1
+│                   └── index.html
+├── resources
+│   └── _gen
+│       └── assets
+│           └── ananke
+│               └── css
+│                   ├── main.css_83735de7ca999e9c17f3419b41b93fdb.content
+│                   └── main.css_83735de7ca999e9c17f3419b41b93fdb.json
+├── static
+│   └── icons
+│       ├── android-chrome-192x192.png
+│       ├── android-chrome-512x512.png
+│       ├── apple-touch-icon.png
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       └── favicon.ico
+└── themes
+    ├── PaperMod
+    │   ├── LICENSE
+    │   ├── README.md
+    │   ├── assets
+    │   │   ├── css
+    │   │   │   ├── common
+    │   │   │   │   ├── 404.css
+    │   │   │   │   ├── archive.css
+    │   │   │   │   ├── footer.css
+    │   │   │   │   ├── header.css
+    │   │   │   │   ├── main.css
+    │   │   │   │   ├── post-entry.css
+    │   │   │   │   ├── post-single.css
+    │   │   │   │   ├── profile-mode.css
+    │   │   │   │   ├── search.css
+    │   │   │   │   └── terms.css
+    │   │   │   ├── core
+    │   │   │   │   ├── license.css
+    │   │   │   │   ├── reset.css
+    │   │   │   │   ├── theme-vars.css
+    │   │   │   │   └── zmedia.css
+    │   │   │   ├── extended
+    │   │   │   │   └── blank.css
+    │   │   │   └── includes
+    │   │   │       ├── chroma-mod.css
+    │   │   │       ├── chroma-styles.css
+    │   │   │       └── scroll-bar.css
+    │   │   └── js
+    │   │       ├── fastsearch.js
+    │   │       ├── fuse.basic.min.js
+    │   │       └── license.js
+    │   ├── go.mod
+    │   ├── i18n
+    │   │   ├── ar.yaml
+    │   │   ├── be.yaml
+    │   │   ├── bg.yaml
+    │   │   ├── bn.yaml
+    │   │   ├── ca.yaml
+    │   │   ├── ckb.yaml
+    │   │   ├── cs.yaml
+    │   │   ├── da.yaml
+    │   │   ├── de.yaml
+    │   │   ├── el.yaml
+    │   │   ├── en.yaml
+    │   │   ├── eo.yaml
+    │   │   ├── es.yaml
+    │   │   ├── fa.yaml
+    │   │   ├── fr.yaml
+    │   │   ├── he.yaml
+    │   │   ├── hi.yaml
+    │   │   ├── hr.yaml
+    │   │   ├── hu.yaml
+    │   │   ├── id.yaml
+    │   │   ├── it.yaml
+    │   │   ├── ja.yaml
+    │   │   ├── ko.yaml
+    │   │   ├── ku.yaml
+    │   │   ├── mn.yaml
+    │   │   ├── ms.yaml
+    │   │   ├── nl.yaml
+    │   │   ├── no.yaml
+    │   │   ├── oc.yaml
+    │   │   ├── pa.yaml
+    │   │   ├── pl.yaml
+    │   │   ├── pnb.yaml
+    │   │   ├── pt.yaml
+    │   │   ├── ro.yaml
+    │   │   ├── ru.yaml
+    │   │   ├── sk.yaml
+    │   │   ├── sv.yaml
+    │   │   ├── sw.yaml
+    │   │   ├── th.yaml
+    │   │   ├── tr.yaml
+    │   │   ├── uk.yaml
+    │   │   ├── uz.yaml
+    │   │   ├── vi.yaml
+    │   │   ├── zh-tw.yaml
+    │   │   └── zh.yaml
+    │   ├── images
+    │   │   ├── screenshot.png
+    │   │   └── tn.png
+    │   ├── layouts
+    │   │   ├── 404.html
+    │   │   ├── _default
+    │   │   │   ├── _markup
+    │   │   │   │   └── render-image.html
+    │   │   │   ├── archives.html
+    │   │   │   ├── baseof.html
+    │   │   │   ├── index.json
+    │   │   │   ├── list.html
+    │   │   │   ├── rss.xml
+    │   │   │   ├── search.html
+    │   │   │   ├── single.html
+    │   │   │   └── terms.html
+    │   │   ├── partials
+    │   │   │   ├── anchored_headings.html
+    │   │   │   ├── author.html
+    │   │   │   ├── breadcrumbs.html
+    │   │   │   ├── comments.html
+    │   │   │   ├── cover.html
+    │   │   │   ├── edit_post.html
+    │   │   │   ├── extend_footer.html
+    │   │   │   ├── extend_head.html
+    │   │   │   ├── footer.html
+    │   │   │   ├── head.html
+    │   │   │   ├── header.html
+    │   │   │   ├── home_info.html
+    │   │   │   ├── index_profile.html
+    │   │   │   ├── post_canonical.html
+    │   │   │   ├── post_meta.html
+    │   │   │   ├── post_nav_links.html
+    │   │   │   ├── share_icons.html
+    │   │   │   ├── social_icons.html
+    │   │   │   ├── svg.html
+    │   │   │   ├── templates
+    │   │   │   │   ├── _funcs
+    │   │   │   │   │   └── get-page-images.html
+    │   │   │   │   ├── opengraph.html
+    │   │   │   │   ├── schema_json.html
+    │   │   │   │   └── twitter_cards.html
+    │   │   │   ├── toc.html
+    │   │   │   └── translation_list.html
+    │   │   ├── robots.txt
+    │   │   └── shortcodes
+    │   │       ├── collapse.html
+    │   │       ├── figure.html
+    │   │       ├── inTextImg.html
+    │   │       ├── ltr.html
+    │   │       ├── rawhtml.html
+    │   │       └── rtl.html
+    │   └── theme.toml
+    ├── ananke
+    │   ├── CHANGELOG.md
+    │   ├── LICENSE.md
+    │   ├── README.md
+    │   ├── archetypes
+    │   │   └── default.md
+    │   ├── assets
+    │   │   └── ananke
+    │   │       ├── css
+    │   │       │   ├── _code.css
+    │   │       │   ├── _hugo-internal-templates.css
+    │   │       │   ├── _social-icons.css
+    │   │       │   ├── _styles.css
+    │   │       │   └── _tachyons.css
+    │   │       ├── dist
+    │   │       │   └── main.css_5c99d70a7725bacd4c701e995b969fea.css
+    │   │       └── socials
+    │   │           ├── facebook.svg
+    │   │           ├── github.svg
+    │   │           ├── gitlab.svg
+    │   │           ├── instagram.svg
+    │   │           ├── keybase.svg
+    │   │           ├── linkedin.svg
+    │   │           ├── mastodon.svg
+    │   │           ├── medium.svg
+    │   │           ├── rss.svg
+    │   │           ├── slack.svg
+    │   │           ├── stackoverflow.svg
+    │   │           ├── tiktok.svg
+    │   │           ├── twitter.svg
+    │   │           └── youtube.svg
+    │   ├── config.yaml
+    │   ├── exampleSite
+    │   │   ├── config.toml
+    │   │   ├── content
+    │   │   │   ├── en
+    │   │   │   │   ├── _index.md
+    │   │   │   │   ├── about
+    │   │   │   │   │   └── index.md
+    │   │   │   │   ├── contact.md
+    │   │   │   │   └── post
+    │   │   │   │       ├── _index.md
+    │   │   │   │       ├── chapter-1.md
+    │   │   │   │       ├── chapter-2.md
+    │   │   │   │       ├── chapter-3.md
+    │   │   │   │       ├── chapter-4.md
+    │   │   │   │       ├── chapter-5.md
+    │   │   │   │       └── chapter-6.md
+    │   │   │   └── fr
+    │   │   │       ├── _index.md
+    │   │   │       ├── contact.md
+    │   │   │       └── post
+    │   │   │           ├── _index.md
+    │   │   │           └── chapter-1.md
+    │   │   ├── go.mod
+    │   │   ├── go.sum
+    │   │   └── static
+    │   │       └── images
+    │   │           ├── Pope-Edouard-de-Beaumont-1844.jpg
+    │   │           ├── Victor_Hugo-Hunchback.jpg
+    │   │           ├── esmeralda.jpg
+    │   │           └── notebook.jpg
+    │   ├── go.mod
+    │   ├── i18n
+    │   │   ├── bg.toml
+    │   │   ├── ca.toml
+    │   │   ├── cs.toml
+    │   │   ├── de.toml
+    │   │   ├── en.toml
+    │   │   ├── es.toml
+    │   │   ├── fi.toml
+    │   │   ├── fr.toml
+    │   │   ├── he.toml
+    │   │   ├── hi.toml
+    │   │   ├── hu.toml
+    │   │   ├── it.toml
+    │   │   ├── ja.toml
+    │   │   ├── nl.toml
+    │   │   ├── no.toml
+    │   │   ├── pl.toml
+    │   │   ├── pt.toml
+    │   │   ├── ru.toml
+    │   │   ├── sv.toml
+    │   │   ├── tr.toml
+    │   │   ├── uk.toml
+    │   │   ├── zh-tw.toml
+    │   │   └── zh.toml
+    │   ├── images
+    │   │   ├── screenshot.png
+    │   │   └── tn.png
+    │   ├── layouts
+    │   │   ├── 404.html
+    │   │   ├── _default
+    │   │   │   ├── baseof.html
+    │   │   │   ├── by.html
+    │   │   │   ├── list.html
+    │   │   │   ├── single.html
+    │   │   │   ├── summary-with-image.html
+    │   │   │   ├── summary.html
+    │   │   │   ├── taxonomy.html
+    │   │   │   └── terms.html
+    │   │   ├── index.html
+    │   │   ├── page
+    │   │   │   └── single.html
+    │   │   ├── partials
+    │   │   │   ├── commento.html
+    │   │   │   ├── func
+    │   │   │   │   ├── GetFeaturedImage.html
+    │   │   │   │   ├── GetLanguageDirection.html
+    │   │   │   │   ├── socials
+    │   │   │   │   │   ├── Get.html
+    │   │   │   │   │   ├── GetBuiltInServicesDefaults.html
+    │   │   │   │   │   ├── GetRegisteredServices.html
+    │   │   │   │   │   ├── GetServiceData.html
+    │   │   │   │   │   └── GetServiceIcon.html
+    │   │   │   │   ├── style
+    │   │   │   │   │   ├── GetMainCSS.html
+    │   │   │   │   │   └── GetResource.html
+    │   │   │   │   └── warn.html
+    │   │   │   ├── head-additions.html
+    │   │   │   ├── i18nlist.html
+    │   │   │   ├── menu-contextual.html
+    │   │   │   ├── new-window-icon.html
+    │   │   │   ├── page-header.html
+    │   │   │   ├── site-favicon.html
+    │   │   │   ├── site-footer.html
+    │   │   │   ├── site-header.html
+    │   │   │   ├── site-navigation.html
+    │   │   │   ├── site-scripts.html
+    │   │   │   ├── site-style.html
+    │   │   │   ├── social-follow.html
+    │   │   │   ├── social-share.html
+    │   │   │   ├── summary-with-image.html
+    │   │   │   ├── summary.html
+    │   │   │   ├── svg
+    │   │   │   │   ├── new-window.svg
+    │   │   │   │   └── tiktok.svg
+    │   │   │   └── tags.html
+    │   │   ├── post
+    │   │   │   ├── list.html
+    │   │   │   └── summary.html
+    │   │   ├── robots.txt
+    │   │   └── shortcodes
+    │   │       └── form-contact.html
+    │   ├── package.hugo.json
+    │   ├── package.json
+    │   ├── resources
+    │   │   └── _gen
+    │   │       └── assets
+    │   │           └── css
+    │   │               └── ananke
+    │   │                   └── css
+    │   │                       ├── main.css_83735de7ca999e9c17f3419b41b93fdb.content
+    │   │                       └── main.css_83735de7ca999e9c17f3419b41b93fdb.json
+    │   ├── stackbit.yaml
+    │   ├── static
+    │   │   └── images
+    │   │       └── gohugo-default-sample-hero-image.jpg
+    │   └── theme.toml
+    └── gokarna
+        ├── LICENSE
+        ├── README.md
+        ├── archetypes
+        │   └── default.md
+        ├── assets
+        │   ├── css
+        │   │   ├── dark.css
+        │   │   ├── main.css
+        │   │   └── normalize.min.css
+        │   └── js
+        │       ├── feather-icons.min.js
+        │       ├── main.js
+        │       └── svg-injector.min.js
+        ├── exampleSite
+        │   ├── config.toml
+        │   ├── content
+        │   │   ├── posts
+        │   │   │   ├── emoji-support.md
+        │   │   │   ├── lorem-ipsum.md
+        │   │   │   ├── markdown-syntax.md
+        │   │   │   ├── theme-documentation-advanced.md
+        │   │   │   └── theme-documentation-basics.md
+        │   │   └── projects
+        │   │       ├── _index.md
+        │   │       ├── bludhaven.md
+        │   │       ├── hydra.md
+        │   │       └── tatooine.md
+        │   ├── static
+        │   │   ├── android-chrome-192x192.png
+        │   │   ├── android-chrome-512x512.png
+        │   │   ├── apple-touch-icon.png
+        │   │   ├── favicon-16x16.png
+        │   │   ├── favicon-32x32.png
+        │   │   ├── favicon.ico
+        │   │   ├── images
+        │   │   │   ├── avatar.webp
+        │   │   │   ├── lorem-ipsum
+        │   │   │   │   └── quick-fox.png
+        │   │   │   └── theme-documentation-advanced
+        │   │   │       ├── homepage-markdown-about-description.png
+        │   │   │       ├── icons-homepage-preview.png
+        │   │   │       └── preview.png
+        │   │   └── site.webmanifest
+        │   └── themes
+        │       └── gokarna -> ../../
+        ├── i18n
+        │   ├── de.toml
+        │   ├── en.toml
+        │   └── es.toml
+        ├── images
+        │   ├── gokarna.jpg
+        │   ├── lighthouse.png
+        │   ├── screenshot-dark-home.png
+        │   ├── screenshot-dark-list.png
+        │   ├── screenshot-dark-post.png
+        │   ├── screenshot-light-home.png
+        │   ├── screenshot-light-list.png
+        │   ├── screenshot-light-post.png
+        │   ├── screenshot.png
+        │   └── tn.png
+        ├── layouts
+        │   ├── 404.html
+        │   ├── _default
+        │   │   ├── baseof.html
+        │   │   ├── list.html
+        │   │   ├── single.html
+        │   │   └── terms.html
+        │   ├── index.html
+        │   └── partials
+        │       ├── footer.html
+        │       ├── head.html
+        │       ├── header.html
+        │       ├── list-posts.html
+        │       ├── list.html
+        │       ├── page.html
+        │       ├── post.html
+        │       ├── prev-next.html
+        │       └── toc.html
+        ├── screenshot.py
+        ├── static
+        │   ├── fonts
+        │   │   ├── Lato-Bold.ttf
+        │   │   └── Lato-Regular.ttf
+        │   └── svg
+        │       └── icons
+        │           ├── angellist.svg
+        │           ├── buymeacoffee.svg
+        │           ├── discord.svg
+        │           ├── dribbble.svg
+        │           ├── email.svg
+        │           ├── facebook.svg
+        │           ├── github.svg
+        │           ├── gmail.svg
+        │           ├── google.svg
+        │           ├── instagram.svg
+        │           ├── iota.svg
+        │           ├── kofi.svg
+        │           ├── linkedin.svg
+        │           ├── mastodon.svg
+        │           ├── mozilla.svg
+        │           ├── reddit.svg
+        │           ├── rss.svg
+        │           ├── spotify.svg
+        │           ├── stackoverflow.svg
+        │           ├── tiktok.svg
+        │           ├── twitch.svg
+        │           ├── twitter.svg
+        │           ├── vimeo.svg
+        │           ├── xing.svg
+        │           ├── ycombinator.svg
+        │           └── youtube.svg
+        └── theme.toml
+
+120 directories, 396 files
