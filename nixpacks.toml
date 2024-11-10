@@ -1,11 +1,13 @@
 [phases.setup]
-aptPkgs = ["hugo"]
+cmds = [
+  "curl -L https://github.com/gohugoio/hugo/releases/download/v0.127.0/hugo_0.127.0_Linux-64bit.tar.gz -o hugo.tar.gz",
+  "tar -zxvf hugo.tar.gz -C /usr/local/bin",
+  "rm hugo.tar.gz"
+]
 
-[ phases.build ]
+[phases.build]
 cmds = ["hugo --minify --config hugo.yaml"]
 
-[ environment ]
-HUGO_VERSION = "0.126.1"
-
-[[ nixpacks.included_files ]]
+[[nixpacks.included_files]]
 paths = ["/public"]
+
