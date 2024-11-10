@@ -1,10 +1,12 @@
 phases:
   setup:
-    nixPkgs:
+    aptPkgs:
       - hugo
   build:
     cmds:
-      - hugo --minify -d public
+      - hugo --minify
       - echo The build is complete.
+environment:
+  HUGO_VERSION: 0.127.0
 included_files:
-  - public/**
+  - public/
